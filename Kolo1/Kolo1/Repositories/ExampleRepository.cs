@@ -249,6 +249,7 @@ public class ExampleRepository : IExampleRepository
         }
         
         await _command.ExecuteNonQueryAsync();
+        return 0;
     }
     
     public async Task InsertProduct_Delivery(AddProductDto product, int deliveryId)
